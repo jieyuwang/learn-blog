@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" data-th-fragment="header">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">logo</a>
+        </div>
+        <div id="navbar" class=" collapse navbar-collapse">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="active menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="#">首页</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="#about">关于</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="#contact">博客</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="#contact">分类</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="#contact">标签</a></li>
+
+            </ul>
+            <ul class="navbar-nav mr-auto" >
+                <li class="nav-item">
+                    <a class="nav-link" href="/blogs?order=new&tag=1">最新 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blogs?order=hot&tag=2">最热</a>
+                </li>
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="搜索">
+                    <a href="/search?q=ww" class="btn btn-outline-secondary my-2 my-sm-0"><i class="fa fa-search"
+                                                                                             aria-hidden="true"></i></a>
+                </form>
+            </ul>
+            <ul class="navbar-nav mr-auto " style="float: right;">
+                <li class=""><a href="/login" class="btn btn-outline-success my-2 my-sm-0" type="submit">登录</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-home" style="width: 100px;height: 52px"><a href="/register" class="btn btn-outline-success my-2 my-sm-0" type="submit">注册</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
