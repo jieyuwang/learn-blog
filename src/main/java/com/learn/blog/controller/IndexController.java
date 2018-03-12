@@ -16,7 +16,7 @@ public class IndexController {
 
         return "Hello World!";
     }
-    @RequestMapping("/index")
+    @RequestMapping("/testindex")
     public String index(){
         return "index";
     }

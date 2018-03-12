@@ -75,8 +75,7 @@ public class UserController{
             try{
                 User oldUser = userService.selectByUserId(user.getId());
                 if (ChkTools.isNotNull(oldUser)){
-                    //boolean isTrue = Md5Util.md5(user.getPassword()).matches(oldUser.getPassword());
-                    boolean isTrue = user.getPassword().matches(oldUser.getPassword());
+                    boolean isTrue = Md5Util.md5(user.getPassword()).matches(oldUser.getPassword());
                     if (isTrue){
                         userService.updateUser(user);
                     }
