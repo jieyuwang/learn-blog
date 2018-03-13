@@ -1,5 +1,10 @@
 server:
-  port: 1000
+  port: 443        # https 端口号，正式 443；测试 8443
+  sslPort: 8080     # http 端口号，正式 80；测试 8080
+  ssl:
+    key-store: classpath:wang1130.cn.jks #存放证书
+    key-password: sslzhengshu
+    key-alias: wang1130.cn
 spring:
   datasource:
     url: jdbc:mysql://wang1130.cn:3306/blog?useUnicode=true&characterEncoding=UTF-8

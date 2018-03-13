@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author Created by 一伞烟雨 on 2018/3/12.
@@ -23,9 +24,9 @@ public class MainController {
      * 首页设置
      * @return
      */
-    @GetMapping({"/","/index"})
-    public String index(){
-        return "redirect:/index";
+    @GetMapping({"/"})
+    public ModelAndView index(){
+        return new ModelAndView("index");
     }
 
     /**

@@ -25,6 +25,12 @@
 	</properties>
 
 	<dependencies>
+		<!--&lt;!&ndash; Web 容器 undertow &ndash;&gt;
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+			<version>1.5.10.RELEASE</version>
+		</dependency>-->
 		<!-- 序列化工具 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
