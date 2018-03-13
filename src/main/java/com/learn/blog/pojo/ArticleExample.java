@@ -1,7 +1,6 @@
 package com.learn.blog.pojo;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class ArticleExample {
@@ -105,713 +104,523 @@ public class ArticleExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
-        public Criteria andArticleIdIsNull() {
-            addCriterion("article_id is null");
+        public Criteria andIdIsNull() {
+            addCriterion("id is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdIsNotNull() {
-            addCriterion("article_id is not null");
+        public Criteria andIdIsNotNull() {
+            addCriterion("id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdEqualTo(Integer value) {
-            addCriterion("article_id =", value, "articleId");
+        public Criteria andIdEqualTo(Integer value) {
+            addCriterion("id =", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdNotEqualTo(Integer value) {
-            addCriterion("article_id <>", value, "articleId");
+        public Criteria andIdNotEqualTo(Integer value) {
+            addCriterion("id <>", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdGreaterThan(Integer value) {
-            addCriterion("article_id >", value, "articleId");
+        public Criteria andIdGreaterThan(Integer value) {
+            addCriterion("id >", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdGreaterThanOrEqualTo(Integer value) {
-            addCriterion("article_id >=", value, "articleId");
+        public Criteria andIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("id >=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdLessThan(Integer value) {
-            addCriterion("article_id <", value, "articleId");
+        public Criteria andIdLessThan(Integer value) {
+            addCriterion("id <", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdLessThanOrEqualTo(Integer value) {
-            addCriterion("article_id <=", value, "articleId");
+        public Criteria andIdLessThanOrEqualTo(Integer value) {
+            addCriterion("id <=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdIn(List<Integer> values) {
-            addCriterion("article_id in", values, "articleId");
+        public Criteria andIdIn(List<Integer> values) {
+            addCriterion("id in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdNotIn(List<Integer> values) {
-            addCriterion("article_id not in", values, "articleId");
+        public Criteria andIdNotIn(List<Integer> values) {
+            addCriterion("id not in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdBetween(Integer value1, Integer value2) {
-            addCriterion("article_id between", value1, value2, "articleId");
+        public Criteria andIdBetween(Integer value1, Integer value2) {
+            addCriterion("id between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleIdNotBetween(Integer value1, Integer value2) {
-            addCriterion("article_id not between", value1, value2, "articleId");
+        public Criteria andIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("id not between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusIsNull() {
-            addCriterion("article_status is null");
+        public Criteria andTitleIsNull() {
+            addCriterion("title is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusIsNotNull() {
-            addCriterion("article_status is not null");
+        public Criteria andTitleIsNotNull() {
+            addCriterion("title is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusEqualTo(String value) {
-            addCriterion("article_status =", value, "articleStatus");
+        public Criteria andTitleEqualTo(String value) {
+            addCriterion("title =", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusNotEqualTo(String value) {
-            addCriterion("article_status <>", value, "articleStatus");
+        public Criteria andTitleNotEqualTo(String value) {
+            addCriterion("title <>", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusGreaterThan(String value) {
-            addCriterion("article_status >", value, "articleStatus");
+        public Criteria andTitleGreaterThan(String value) {
+            addCriterion("title >", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusGreaterThanOrEqualTo(String value) {
-            addCriterion("article_status >=", value, "articleStatus");
+        public Criteria andTitleGreaterThanOrEqualTo(String value) {
+            addCriterion("title >=", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusLessThan(String value) {
-            addCriterion("article_status <", value, "articleStatus");
+        public Criteria andTitleLessThan(String value) {
+            addCriterion("title <", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusLessThanOrEqualTo(String value) {
-            addCriterion("article_status <=", value, "articleStatus");
+        public Criteria andTitleLessThanOrEqualTo(String value) {
+            addCriterion("title <=", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusLike(String value) {
-            addCriterion("article_status like", value, "articleStatus");
+        public Criteria andTitleLike(String value) {
+            addCriterion("title like", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusNotLike(String value) {
-            addCriterion("article_status not like", value, "articleStatus");
+        public Criteria andTitleNotLike(String value) {
+            addCriterion("title not like", value, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusIn(List<String> values) {
-            addCriterion("article_status in", values, "articleStatus");
+        public Criteria andTitleIn(List<String> values) {
+            addCriterion("title in", values, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusNotIn(List<String> values) {
-            addCriterion("article_status not in", values, "articleStatus");
+        public Criteria andTitleNotIn(List<String> values) {
+            addCriterion("title not in", values, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusBetween(String value1, String value2) {
-            addCriterion("article_status between", value1, value2, "articleStatus");
+        public Criteria andTitleBetween(String value1, String value2) {
+            addCriterion("title between", value1, value2, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleStatusNotBetween(String value1, String value2) {
-            addCriterion("article_status not between", value1, value2, "articleStatus");
+        public Criteria andTitleNotBetween(String value1, String value2) {
+            addCriterion("title not between", value1, value2, "title");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedIsNull() {
-            addCriterion("article_created is null");
+        public Criteria andSummeryIsNull() {
+            addCriterion("summery is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedIsNotNull() {
-            addCriterion("article_created is not null");
+        public Criteria andSummeryIsNotNull() {
+            addCriterion("summery is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedEqualTo(Date value) {
-            addCriterion("article_created =", value, "articleCreated");
+        public Criteria andSummeryEqualTo(Integer value) {
+            addCriterion("summery =", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedNotEqualTo(Date value) {
-            addCriterion("article_created <>", value, "articleCreated");
+        public Criteria andSummeryNotEqualTo(Integer value) {
+            addCriterion("summery <>", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedGreaterThan(Date value) {
-            addCriterion("article_created >", value, "articleCreated");
+        public Criteria andSummeryGreaterThan(Integer value) {
+            addCriterion("summery >", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedGreaterThanOrEqualTo(Date value) {
-            addCriterion("article_created >=", value, "articleCreated");
+        public Criteria andSummeryGreaterThanOrEqualTo(Integer value) {
+            addCriterion("summery >=", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedLessThan(Date value) {
-            addCriterion("article_created <", value, "articleCreated");
+        public Criteria andSummeryLessThan(Integer value) {
+            addCriterion("summery <", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedLessThanOrEqualTo(Date value) {
-            addCriterion("article_created <=", value, "articleCreated");
+        public Criteria andSummeryLessThanOrEqualTo(Integer value) {
+            addCriterion("summery <=", value, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedIn(List<Date> values) {
-            addCriterion("article_created in", values, "articleCreated");
+        public Criteria andSummeryIn(List<Integer> values) {
+            addCriterion("summery in", values, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedNotIn(List<Date> values) {
-            addCriterion("article_created not in", values, "articleCreated");
+        public Criteria andSummeryNotIn(List<Integer> values) {
+            addCriterion("summery not in", values, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedBetween(Date value1, Date value2) {
-            addCriterion("article_created between", value1, value2, "articleCreated");
+        public Criteria andSummeryBetween(Integer value1, Integer value2) {
+            addCriterion("summery between", value1, value2, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleCreatedNotBetween(Date value1, Date value2) {
-            addCriterion("article_created not between", value1, value2, "articleCreated");
+        public Criteria andSummeryNotBetween(Integer value1, Integer value2) {
+            addCriterion("summery not between", value1, value2, "summery");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleIsNull() {
-            addCriterion("article_title is null");
+        public Criteria andContentIsNull() {
+            addCriterion("content is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleIsNotNull() {
-            addCriterion("article_title is not null");
+        public Criteria andContentIsNotNull() {
+            addCriterion("content is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleEqualTo(String value) {
-            addCriterion("article_title =", value, "articleTitle");
+        public Criteria andContentEqualTo(String value) {
+            addCriterion("content =", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleNotEqualTo(String value) {
-            addCriterion("article_title <>", value, "articleTitle");
+        public Criteria andContentNotEqualTo(String value) {
+            addCriterion("content <>", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleGreaterThan(String value) {
-            addCriterion("article_title >", value, "articleTitle");
+        public Criteria andContentGreaterThan(String value) {
+            addCriterion("content >", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleGreaterThanOrEqualTo(String value) {
-            addCriterion("article_title >=", value, "articleTitle");
+        public Criteria andContentGreaterThanOrEqualTo(String value) {
+            addCriterion("content >=", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleLessThan(String value) {
-            addCriterion("article_title <", value, "articleTitle");
+        public Criteria andContentLessThan(String value) {
+            addCriterion("content <", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleLessThanOrEqualTo(String value) {
-            addCriterion("article_title <=", value, "articleTitle");
+        public Criteria andContentLessThanOrEqualTo(String value) {
+            addCriterion("content <=", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleLike(String value) {
-            addCriterion("article_title like", value, "articleTitle");
+        public Criteria andContentLike(String value) {
+            addCriterion("content like", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleNotLike(String value) {
-            addCriterion("article_title not like", value, "articleTitle");
+        public Criteria andContentNotLike(String value) {
+            addCriterion("content not like", value, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleIn(List<String> values) {
-            addCriterion("article_title in", values, "articleTitle");
+        public Criteria andContentIn(List<String> values) {
+            addCriterion("content in", values, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleNotIn(List<String> values) {
-            addCriterion("article_title not in", values, "articleTitle");
+        public Criteria andContentNotIn(List<String> values) {
+            addCriterion("content not in", values, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleBetween(String value1, String value2) {
-            addCriterion("article_title between", value1, value2, "articleTitle");
+        public Criteria andContentBetween(String value1, String value2) {
+            addCriterion("content between", value1, value2, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleTitleNotBetween(String value1, String value2) {
-            addCriterion("article_title not between", value1, value2, "articleTitle");
+        public Criteria andContentNotBetween(String value1, String value2) {
+            addCriterion("content not between", value1, value2, "content");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryIsNull() {
-            addCriterion("article_summery is null");
+        public Criteria andHtmlcontentIsNull() {
+            addCriterion("htmlContent is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryIsNotNull() {
-            addCriterion("article_summery is not null");
+        public Criteria andHtmlcontentIsNotNull() {
+            addCriterion("htmlContent is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryEqualTo(Integer value) {
-            addCriterion("article_summery =", value, "articleSummery");
+        public Criteria andHtmlcontentEqualTo(String value) {
+            addCriterion("htmlContent =", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryNotEqualTo(Integer value) {
-            addCriterion("article_summery <>", value, "articleSummery");
+        public Criteria andHtmlcontentNotEqualTo(String value) {
+            addCriterion("htmlContent <>", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryGreaterThan(Integer value) {
-            addCriterion("article_summery >", value, "articleSummery");
+        public Criteria andHtmlcontentGreaterThan(String value) {
+            addCriterion("htmlContent >", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryGreaterThanOrEqualTo(Integer value) {
-            addCriterion("article_summery >=", value, "articleSummery");
+        public Criteria andHtmlcontentGreaterThanOrEqualTo(String value) {
+            addCriterion("htmlContent >=", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryLessThan(Integer value) {
-            addCriterion("article_summery <", value, "articleSummery");
+        public Criteria andHtmlcontentLessThan(String value) {
+            addCriterion("htmlContent <", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryLessThanOrEqualTo(Integer value) {
-            addCriterion("article_summery <=", value, "articleSummery");
+        public Criteria andHtmlcontentLessThanOrEqualTo(String value) {
+            addCriterion("htmlContent <=", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryIn(List<Integer> values) {
-            addCriterion("article_summery in", values, "articleSummery");
+        public Criteria andHtmlcontentLike(String value) {
+            addCriterion("htmlContent like", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryNotIn(List<Integer> values) {
-            addCriterion("article_summery not in", values, "articleSummery");
+        public Criteria andHtmlcontentNotLike(String value) {
+            addCriterion("htmlContent not like", value, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryBetween(Integer value1, Integer value2) {
-            addCriterion("article_summery between", value1, value2, "articleSummery");
+        public Criteria andHtmlcontentIn(List<String> values) {
+            addCriterion("htmlContent in", values, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleSummeryNotBetween(Integer value1, Integer value2) {
-            addCriterion("article_summery not between", value1, value2, "articleSummery");
+        public Criteria andHtmlcontentNotIn(List<String> values) {
+            addCriterion("htmlContent not in", values, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentIsNull() {
-            addCriterion("article_content is null");
+        public Criteria andHtmlcontentBetween(String value1, String value2) {
+            addCriterion("htmlContent between", value1, value2, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentIsNotNull() {
-            addCriterion("article_content is not null");
+        public Criteria andHtmlcontentNotBetween(String value1, String value2) {
+            addCriterion("htmlContent not between", value1, value2, "htmlcontent");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentEqualTo(String value) {
-            addCriterion("article_content =", value, "articleContent");
+        public Criteria andReadsizeIsNull() {
+            addCriterion("readSize is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentNotEqualTo(String value) {
-            addCriterion("article_content <>", value, "articleContent");
+        public Criteria andReadsizeIsNotNull() {
+            addCriterion("readSize is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentGreaterThan(String value) {
-            addCriterion("article_content >", value, "articleContent");
+        public Criteria andReadsizeEqualTo(String value) {
+            addCriterion("readSize =", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentGreaterThanOrEqualTo(String value) {
-            addCriterion("article_content >=", value, "articleContent");
+        public Criteria andReadsizeNotEqualTo(String value) {
+            addCriterion("readSize <>", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentLessThan(String value) {
-            addCriterion("article_content <", value, "articleContent");
+        public Criteria andReadsizeGreaterThan(String value) {
+            addCriterion("readSize >", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentLessThanOrEqualTo(String value) {
-            addCriterion("article_content <=", value, "articleContent");
+        public Criteria andReadsizeGreaterThanOrEqualTo(String value) {
+            addCriterion("readSize >=", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentLike(String value) {
-            addCriterion("article_content like", value, "articleContent");
+        public Criteria andReadsizeLessThan(String value) {
+            addCriterion("readSize <", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentNotLike(String value) {
-            addCriterion("article_content not like", value, "articleContent");
+        public Criteria andReadsizeLessThanOrEqualTo(String value) {
+            addCriterion("readSize <=", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentIn(List<String> values) {
-            addCriterion("article_content in", values, "articleContent");
+        public Criteria andReadsizeLike(String value) {
+            addCriterion("readSize like", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentNotIn(List<String> values) {
-            addCriterion("article_content not in", values, "articleContent");
+        public Criteria andReadsizeNotLike(String value) {
+            addCriterion("readSize not like", value, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentBetween(String value1, String value2) {
-            addCriterion("article_content between", value1, value2, "articleContent");
+        public Criteria andReadsizeIn(List<String> values) {
+            addCriterion("readSize in", values, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleContentNotBetween(String value1, String value2) {
-            addCriterion("article_content not between", value1, value2, "articleContent");
+        public Criteria andReadsizeNotIn(List<String> values) {
+            addCriterion("readSize not in", values, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentIsNull() {
-            addCriterion("article_htmlContent is null");
+        public Criteria andReadsizeBetween(String value1, String value2) {
+            addCriterion("readSize between", value1, value2, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentIsNotNull() {
-            addCriterion("article_htmlContent is not null");
+        public Criteria andReadsizeNotBetween(String value1, String value2) {
+            addCriterion("readSize not between", value1, value2, "readsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentEqualTo(String value) {
-            addCriterion("article_htmlContent =", value, "articleHtmlcontent");
+        public Criteria andCommentsizeIsNull() {
+            addCriterion("commentSize is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentNotEqualTo(String value) {
-            addCriterion("article_htmlContent <>", value, "articleHtmlcontent");
+        public Criteria andCommentsizeIsNotNull() {
+            addCriterion("commentSize is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentGreaterThan(String value) {
-            addCriterion("article_htmlContent >", value, "articleHtmlcontent");
+        public Criteria andCommentsizeEqualTo(Integer value) {
+            addCriterion("commentSize =", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentGreaterThanOrEqualTo(String value) {
-            addCriterion("article_htmlContent >=", value, "articleHtmlcontent");
+        public Criteria andCommentsizeNotEqualTo(Integer value) {
+            addCriterion("commentSize <>", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentLessThan(String value) {
-            addCriterion("article_htmlContent <", value, "articleHtmlcontent");
+        public Criteria andCommentsizeGreaterThan(Integer value) {
+            addCriterion("commentSize >", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentLessThanOrEqualTo(String value) {
-            addCriterion("article_htmlContent <=", value, "articleHtmlcontent");
+        public Criteria andCommentsizeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("commentSize >=", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentLike(String value) {
-            addCriterion("article_htmlContent like", value, "articleHtmlcontent");
+        public Criteria andCommentsizeLessThan(Integer value) {
+            addCriterion("commentSize <", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentNotLike(String value) {
-            addCriterion("article_htmlContent not like", value, "articleHtmlcontent");
+        public Criteria andCommentsizeLessThanOrEqualTo(Integer value) {
+            addCriterion("commentSize <=", value, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentIn(List<String> values) {
-            addCriterion("article_htmlContent in", values, "articleHtmlcontent");
+        public Criteria andCommentsizeIn(List<Integer> values) {
+            addCriterion("commentSize in", values, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentNotIn(List<String> values) {
-            addCriterion("article_htmlContent not in", values, "articleHtmlcontent");
+        public Criteria andCommentsizeNotIn(List<Integer> values) {
+            addCriterion("commentSize not in", values, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentBetween(String value1, String value2) {
-            addCriterion("article_htmlContent between", value1, value2, "articleHtmlcontent");
+        public Criteria andCommentsizeBetween(Integer value1, Integer value2) {
+            addCriterion("commentSize between", value1, value2, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleHtmlcontentNotBetween(String value1, String value2) {
-            addCriterion("article_htmlContent not between", value1, value2, "articleHtmlcontent");
+        public Criteria andCommentsizeNotBetween(Integer value1, Integer value2) {
+            addCriterion("commentSize not between", value1, value2, "commentsize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlIsNull() {
-            addCriterion("article_url is null");
+        public Criteria andLikesizeIsNull() {
+            addCriterion("likeSize is null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlIsNotNull() {
-            addCriterion("article_url is not null");
+        public Criteria andLikesizeIsNotNull() {
+            addCriterion("likeSize is not null");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlEqualTo(String value) {
-            addCriterion("article_url =", value, "articleUrl");
+        public Criteria andLikesizeEqualTo(Integer value) {
+            addCriterion("likeSize =", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlNotEqualTo(String value) {
-            addCriterion("article_url <>", value, "articleUrl");
+        public Criteria andLikesizeNotEqualTo(Integer value) {
+            addCriterion("likeSize <>", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlGreaterThan(String value) {
-            addCriterion("article_url >", value, "articleUrl");
+        public Criteria andLikesizeGreaterThan(Integer value) {
+            addCriterion("likeSize >", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlGreaterThanOrEqualTo(String value) {
-            addCriterion("article_url >=", value, "articleUrl");
+        public Criteria andLikesizeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("likeSize >=", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlLessThan(String value) {
-            addCriterion("article_url <", value, "articleUrl");
+        public Criteria andLikesizeLessThan(Integer value) {
+            addCriterion("likeSize <", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlLessThanOrEqualTo(String value) {
-            addCriterion("article_url <=", value, "articleUrl");
+        public Criteria andLikesizeLessThanOrEqualTo(Integer value) {
+            addCriterion("likeSize <=", value, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlLike(String value) {
-            addCriterion("article_url like", value, "articleUrl");
+        public Criteria andLikesizeIn(List<Integer> values) {
+            addCriterion("likeSize in", values, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlNotLike(String value) {
-            addCriterion("article_url not like", value, "articleUrl");
+        public Criteria andLikesizeNotIn(List<Integer> values) {
+            addCriterion("likeSize not in", values, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlIn(List<String> values) {
-            addCriterion("article_url in", values, "articleUrl");
+        public Criteria andLikesizeBetween(Integer value1, Integer value2) {
+            addCriterion("likeSize between", value1, value2, "likesize");
             return (Criteria) this;
         }
 
-        public Criteria andArticleUrlNotIn(List<String> values) {
-            addCriterion("article_url not in", values, "articleUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleUrlBetween(String value1, String value2) {
-            addCriterion("article_url between", value1, value2, "articleUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleUrlNotBetween(String value1, String value2) {
-            addCriterion("article_url not between", value1, value2, "articleUrl");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingIsNull() {
-            addCriterion("article_reading is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingIsNotNull() {
-            addCriterion("article_reading is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingEqualTo(Integer value) {
-            addCriterion("article_reading =", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingNotEqualTo(Integer value) {
-            addCriterion("article_reading <>", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingGreaterThan(Integer value) {
-            addCriterion("article_reading >", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingGreaterThanOrEqualTo(Integer value) {
-            addCriterion("article_reading >=", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingLessThan(Integer value) {
-            addCriterion("article_reading <", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingLessThanOrEqualTo(Integer value) {
-            addCriterion("article_reading <=", value, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingIn(List<Integer> values) {
-            addCriterion("article_reading in", values, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingNotIn(List<Integer> values) {
-            addCriterion("article_reading not in", values, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingBetween(Integer value1, Integer value2) {
-            addCriterion("article_reading between", value1, value2, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleReadingNotBetween(Integer value1, Integer value2) {
-            addCriterion("article_reading not between", value1, value2, "articleReading");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountIsNull() {
-            addCriterion("article_commentscount is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountIsNotNull() {
-            addCriterion("article_commentscount is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountEqualTo(Integer value) {
-            addCriterion("article_commentscount =", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountNotEqualTo(Integer value) {
-            addCriterion("article_commentscount <>", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountGreaterThan(Integer value) {
-            addCriterion("article_commentscount >", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountGreaterThanOrEqualTo(Integer value) {
-            addCriterion("article_commentscount >=", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountLessThan(Integer value) {
-            addCriterion("article_commentscount <", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountLessThanOrEqualTo(Integer value) {
-            addCriterion("article_commentscount <=", value, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountIn(List<Integer> values) {
-            addCriterion("article_commentscount in", values, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountNotIn(List<Integer> values) {
-            addCriterion("article_commentscount not in", values, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountBetween(Integer value1, Integer value2) {
-            addCriterion("article_commentscount between", value1, value2, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleCommentscountNotBetween(Integer value1, Integer value2) {
-            addCriterion("article_commentscount not between", value1, value2, "articleCommentscount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountIsNull() {
-            addCriterion("article_likescount is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountIsNotNull() {
-            addCriterion("article_likescount is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountEqualTo(Integer value) {
-            addCriterion("article_likescount =", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountNotEqualTo(Integer value) {
-            addCriterion("article_likescount <>", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountGreaterThan(Integer value) {
-            addCriterion("article_likescount >", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountGreaterThanOrEqualTo(Integer value) {
-            addCriterion("article_likescount >=", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountLessThan(Integer value) {
-            addCriterion("article_likescount <", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountLessThanOrEqualTo(Integer value) {
-            addCriterion("article_likescount <=", value, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountIn(List<Integer> values) {
-            addCriterion("article_likescount in", values, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountNotIn(List<Integer> values) {
-            addCriterion("article_likescount not in", values, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountBetween(Integer value1, Integer value2) {
-            addCriterion("article_likescount between", value1, value2, "articleLikescount");
-            return (Criteria) this;
-        }
-
-        public Criteria andArticleLikescountNotBetween(Integer value1, Integer value2) {
-            addCriterion("article_likescount not between", value1, value2, "articleLikescount");
+        public Criteria andLikesizeNotBetween(Integer value1, Integer value2) {
+            addCriterion("likeSize not between", value1, value2, "likesize");
             return (Criteria) this;
         }
     }

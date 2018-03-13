@@ -69,6 +69,12 @@
   <sql id="Base_Column_List">
     id, name, email, username, password
   </sql>
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+     select
+    <include refid="Base_Column_List" />
+    FROM t_user
+    WHERE username = #{username}
+  </select>
   <select id="selectByExample" parameterType="com.learn.blog.pojo.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

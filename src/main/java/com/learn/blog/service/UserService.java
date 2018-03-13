@@ -38,4 +38,9 @@ public interface UserService {
      */
     void updateUser(User user);
 
+    /**
+     * 根据用户名查找用户
+     * @param username
+     */
+    User selectByUsername(String username);
 }

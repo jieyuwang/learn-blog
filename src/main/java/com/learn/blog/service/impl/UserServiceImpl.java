@@ -2,9 +2,7 @@ package com.learn.blog.service.impl;
 
 import com.learn.blog.dao.UserMapper;
 import com.learn.blog.pojo.User;
-import com.learn.blog.pojo.UserExample;
 import com.learn.blog.service.UserService;
-import org.omg.PortableInterceptor.USER_EXCEPTION;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,6 +42,12 @@ public class UserServiceImpl implements UserService{
     @Override
     public void updateUser(User user){
         userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public User selectByUsername(String username) {
+        User user = userMapper.selectByUsername(username);
+        return user;
     }
 
 }

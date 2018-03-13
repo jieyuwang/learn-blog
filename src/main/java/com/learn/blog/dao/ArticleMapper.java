@@ -2,15 +2,16 @@ package com.learn.blog.dao;
 
 import com.learn.blog.pojo.Article;
 import com.learn.blog.pojo.ArticleExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface ArticleMapper {
     long countByExample(ArticleExample example);
 
     int deleteByExample(ArticleExample example);
 
-    int deleteByPrimaryKey(Integer articleId);
+    int deleteByPrimaryKey(Integer id);
 
     int insert(Article record);
 
@@ -18,7 +19,9 @@ public interface ArticleMapper {
 
     List<Article> selectByExample(ArticleExample example);
 
-    Article selectByPrimaryKey(Integer articleId);
+    Article selectByPrimaryKey(Integer id);
+
+    List<Article> selectByUserId(Integer userId);
 
     int updateByExampleSelective(@Param("record") Article record, @Param("example") ArticleExample example);
 

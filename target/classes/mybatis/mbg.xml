@@ -47,13 +47,20 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
         <!-- table指定每个表的生成策略 -->
-        <table tableName="t_user" domainObjectName="User" enableCountByExample="true"
+        <table tableName="t_article" domainObjectName="Article" enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
                enableSelectByExample="true"
                enableSelectByPrimaryKey="true"
                selectByExampleQueryId="true">
         </table>
+       <!-- <table tableName="t_user" domainObjectName="User" enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               enableSelectByPrimaryKey="true"
+               selectByExampleQueryId="true">
+        </table>-->
        <!-- <table tableName="t_lables" domainObjectName="Lables" enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
@@ -62,13 +69,6 @@
                selectByExampleQueryId="true">
         </table>
         <table tableName="t_category" domainObjectName="Category" enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               enableSelectByPrimaryKey="true"
-               selectByExampleQueryId="true">
-        </table>
-        <table tableName="t_article" domainObjectName="Article" enableCountByExample="true"
                enableUpdateByExample="true"
                enableDeleteByExample="true"
                enableSelectByExample="true"
