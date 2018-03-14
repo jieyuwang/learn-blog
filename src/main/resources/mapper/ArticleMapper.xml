@@ -72,7 +72,13 @@
   <sql id="Base_Column_List">
     id, title, summery, content, htmlContent, readSize, commentSize, likeSize
   </sql>
- <!-- <select id=""></select>-->
+  <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    SELECT
+     <include refid="Base_Column_List"/>
+     FROM t_article
+    WHERE t_article.user_id =#{user_id,jdbcType=INTEGER}
+    ORDER BY t_article.createTime DESC
+  </select>
   <select id="selectByExample" parameterType="com.learn.blog.pojo.ArticleExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
